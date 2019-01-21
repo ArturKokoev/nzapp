@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 var mongodb = require("mongodb");
 
 var client = mongodb.MongoClient;
-var url = "mongodb://localhost:27017/issues";
+var url = "mongodb://aman:aman123@ds163164.mlab.com:63164/neuseeland";
 
 client.connect(url, function (err, client) {
     
