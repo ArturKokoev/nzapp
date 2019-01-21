@@ -1,0 +1,6 @@
+cd frontend
+frontend/ng serve --open
+
+
+cd backend
+backend/npm run dev
