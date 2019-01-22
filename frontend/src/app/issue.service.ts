@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class IssueService {
 
-  url = 'http://localhost:4000';
+  url = 'https://murmuring-coast-49829.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
