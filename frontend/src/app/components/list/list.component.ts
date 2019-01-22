@@ -104,11 +104,7 @@ export class ListComponent implements OnInit {
   }
 
 
-  deleteIssue(id) {
-    this.issueService.deleteIssue(id).subscribe(() => {
-      this.fetchIssues();
-    });
-  }
+
 
 }
 //AIzaSyCEjITXs6qtne3X_DNFOE0m54_o43iOi3Q

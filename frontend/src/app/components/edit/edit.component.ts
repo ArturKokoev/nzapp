@@ -32,8 +32,6 @@ export class EditComponent implements OnInit {
   ngOnInit() {
     console.log("EDIT");
     this.route.params.subscribe(params => {
-      console.log( params["id.lat"]);
-      console.log( params["id.lng"]);
 
       this.lat = params["id.lat"];
       this.lat =  parseFloat(this.lat);

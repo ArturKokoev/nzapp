@@ -6,33 +6,17 @@ import {HttpClient} from '@angular/common/http';
 })
 export class IssueService {
 
-  uri = '';
+  url = 'http://localhost:4000';
 
   constructor(private http: HttpClient) { }
 
   getIssues() {
-    return this.http.get(`${this.uri}/issues`);
+    return this.http.get(`${this.url}/issues`);
   }
 
   getPostContent() {
-    return this.http.get(`${this.uri}/postcontent`);
+    return this.http.get(`${this.url}/postcontent`);
   }
 
-  addIssue(post_meta){
-    const issue = {
-      post_meta: post_meta
-    };
-    return this.http.post(`${this.uri}/issues/add`, issue);
-  }
-
-  updateIssue(id, post_meta){
-    const issue = {
-      post_meta: post_meta
-    };
-    return this.http.post(`${this.uri}/issues/update/${id}`, issue);
-  }
-
-  deleteIssue(id) {
-    return this.http.get(`${this.uri}/issues/delete/${id}`);
-  }
+ 
 }

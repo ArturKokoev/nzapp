@@ -1,6 +1,11 @@
-cd frontend
-frontend/ng serve --open
+1. Mongo DB Starten -> mongod -> mongo kommandos
 
 
-cd backend
-backend/npm run dev
+2. im cd backend Ordner
+npm run dev
+
+
+3. im cd frontend Ordner
+ng serve --open
+
+
