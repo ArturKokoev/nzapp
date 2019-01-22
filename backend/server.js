@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 var mongodb = require("mongodb");
 
 var client = mongodb.MongoClient;
-var url = "mongodb://aman:aman123@ds149344.mlab.com:49344/issues";
+var url = process.env.MONGODB_URI ;
 //var url = "mongodb://localhost:27017/issues";
 client.connect(url, function (err, client) {
     
@@ -122,6 +122,9 @@ var pipeline2 = [
 
 app.use('/', router);
 
-const port = process.env.PORT || 8080;
+var server = process.env.PORT || 8080, function(){
+    var port = server.adress().port;
+    console.log("app runnning on port", port);
+} ;
 
-app.listen(port, () => console.log('Express server running on port 8080'));
+//app.listen(port, () => console.log('Express server running on port 8080'));
