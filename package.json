@@ -1,0 +1,23 @@
+{
+  "name": "neuseeland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "js-marker-clusterer": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturKokoev/neuseeland.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturKokoev/neuseeland/issues"
+  },
+  "homepage": "https://github.com/ArturKokoev/neuseeland#readme"
+}
